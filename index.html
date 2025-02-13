@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odin Recipes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
     <h1>Odin Recipes</h1>
-<ul>
-    <li><a href="./recipes/lasagna.html">World's Best Lasagna</a></li>
-    <li><a href="./recipes/enchiladas.html">Angela's Awesome Enchiladas</a></li>
-    <li><a href="./recipes/stew.html">Chef John's Beef and Barley Stew</a></li>
+  </header>
 
-</ul>
+  <main>
+    <section class="recipe-grid">
+      <article class="recipe-card">
+        <a href="./recipes/lasagna.html">
+          <img src="./images/lasagna.jpg" alt="World's Best Lasagna">
+          <h2>World's Best Lasagna</h2>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="./recipes/enchiladas.html">
+          <img src="./images/enchiladas.jpeg" alt="Angela's Awesome Enchiladas">
+          <h2>Angela's Awesome Enchiladas</h2>
+        </a>
+      </article>
+
+      <article class="recipe-card">
+        <a href="./recipes/stew.html">
+          <img src="./images/stew.jpg" alt="Chef John's Beef and Barley Stew">
+          <h2>Chef John's Beef and Barley Stew</h2>
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Odin Recipes</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #f78c42;
+    --secondary-color: #70b37f;
+    --text-color: #333333;
+    --background-color: linear-gradient(135deg, #fdf6e3, #f3e2d3);
+    --section-bg: rgba(255, 255, 255, 0.9);
+    --card-bg: #ffffff;
+    --shadow-color: rgba(44, 62, 80, 0.15);
+    --transition-speed: 0.25s;
+    --radius: 12px;
+    --font-family: 'Inter', sans-serif;
+    --header-bg: #f78c42;
+    --header-text-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem;
+}
+
+header {
+    background: var(--header-bg);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-bottom: 2rem;
+}
+
+header nav a {
+    color: var(--header-text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    transition: color var(--transition-speed);
+}
+
+header nav a:hover {
+    color: var(--secondary-color);  /* Hover effect with green */
+}
+
+.main-container {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 5px 10px var(--shadow-color);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+    letter-spacing: 1.2px;
+}
+
+.ingredients, .directions, .notes {
+    background: var(--section-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 3px 6px var(--shadow-color);
+    margin-bottom: 2rem;
+}
+
+.ingredients h2, .directions h2, .notes h2 {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+ul, ol {
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: var(--header-bg);
+    color: var(--header-text-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1.5rem;
+    }
+    .ingredients, .directions {
+        padding: 1.5rem;
+    }
+}
