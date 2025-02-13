@@ -45,7 +45,7 @@ header nav a {
 }
 
 header nav a:hover {
-    color: var(--secondary-color);  /* Hover effect with green */
+    color: var(--secondary-color);
 }
 
 .main-container {
@@ -67,7 +67,9 @@ h1 {
     letter-spacing: 1.2px;
 }
 
-.ingredients, .directions, .notes {
+.ingredients,
+.directions,
+.notes {
     background: var(--section-bg);
     padding: 2rem;
     border-radius: var(--radius);
@@ -75,7 +77,9 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.ingredients h2, .directions h2, .notes h2 {
+.ingredients h2,
+.directions h2,
+.notes h2 {
     font-size: 1.9rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -84,7 +88,8 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-ul, ol {
+ul,
+ol {
     padding-left: 2rem;
 }
 
@@ -114,7 +119,9 @@ footer {
     .main-container {
         padding: 1.5rem;
     }
-    .ingredients, .directions {
+
+    .ingredients,
+    .directions {
         padding: 1.5rem;
     }
 }
